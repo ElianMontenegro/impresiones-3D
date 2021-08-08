@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block title %}
+Impresiones 3D
+{% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/home/index.css' %}">
+{% endblock css %}
+
+{% block content %}
+{% include 'include/header.html' %}
+<main class="main">
+    <div class="home">
+        <section class="cover-page">
+            
+            {% for g in product %}
+                {{g.description}}
+            {% endfor %}
+                
+             <img src="" alt="Las-Mejores-Impresoras-3D">
+            
+        </section>
+        <section class="last-products">
+            <div class="row-container-product">
+                <div class="product">
+
+                </div>
+                <div class="product">
+
+                </div>
+                <div class="product">
+
+                </div>
+                <div class="product">
+
+                </div>
+            </div>
+        </section>
+        <section class="list-products">
+            <div class="row-container-product">
+                <div class="product">
+
+                </div>
+                <div class="product">
+
+                </div>
+                <div class="product">
+
+                </div>
+                <div class="product">
+
+                </div>
+                <div class="product">
+
+                </div>
+                <div class="product">
+
+                </div>
+                <div class="product">
+
+                </div>
+                <div class="product">
+
+                </div>
+                <div class="product">
+
+                </div>
+                <div class="product">
+
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+{% include 'include/footer.html' %}
+{% endblock content %}
+
